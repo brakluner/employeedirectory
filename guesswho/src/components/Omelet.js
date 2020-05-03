@@ -27,7 +27,9 @@ class Omelet extends Component {
         return (
             <div className="meatTable">
             <Eggs>
-                <Milk>
+                <Milk
+                name={this.state.result.name}
+                >
                     <Meat
                     gender={this.state.result.gender}
                     ></Meat>
