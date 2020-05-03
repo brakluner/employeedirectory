@@ -34,26 +34,14 @@ class Omelet extends Component {
     render() {
         return (
             <div className="meatTable">
-            <Eggs>
                 <Milk
                 title={this.state.result.title}
                 first={this.state.result.first}
                 last={this.state.result.last}
-                    // .map((l, i) => (
-                //       <div
-                //         key={i}
-                //         title={l.title}
-                //         first={l.first}
-                //         last={l.last}
-                //       />
-                //     ))
-                //   }
                 >
-                    <Meat
-                    gender={this.state.result.gender}
-                    ></Meat>
+                    <Meat />
+                    <Eggs />
                 </Milk>
-            </Eggs>
             </div>
         )
     }

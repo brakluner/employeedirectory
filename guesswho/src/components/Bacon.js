@@ -4,7 +4,7 @@ import API from "../utils/API"
 
 
 
-class Eggs extends Component {
+class Bacon extends Component {
     state = {
         result: [{
             gender: '',
@@ -31,18 +31,15 @@ class Eggs extends Component {
 
     getEmployees = people => {
         API.getPeople(people)
-            .then(res => this.setState({ result: res.data.results[0].location }))
+            .then(res => this.setState({ result: res.data.results[0].location.street }))
             .catch(err => console.log(err));
     };
 
     render() {
         return (
-            <div>
-                 City: {this.state.result.city}<br></br>
-                 State: {this.state.result.state}<br></br>
-                 Country: {this.state.result.country}<br></br>
-                 Postcode: {this.state.result.postcode}</div>
+            <div>Street: {this.state.result.number} {this.state.result.name}
+                 </div>
         );
         };
     }
-export default Eggs;
+export default Bacon;
