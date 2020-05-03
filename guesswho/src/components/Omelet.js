@@ -4,15 +4,22 @@ import Meat from "./Meat";
 import Milk from "./Milk";
 import API from "../utils/API"
 
+console.log(API.getPeople())
+
 class Omelet extends Component {
     state = {
-        result: {},
+        result: [],
         search: ""
     };
 
-    getPeople = people => {
-        API.search(people)
-            .then(res => this.setState({ result: res.data }))
+    componentDidMount() {
+        this.getEmployees();
+      }
+    
+
+    getEmployees = people => {
+        API.getPeople(people)
+            .then(res => this.setState({ result: res.data.results[0] }))
             .catch(err => console.log(err));
     };
 
@@ -21,7 +28,9 @@ class Omelet extends Component {
             <div className="meatTable">
             <Eggs>
                 <Milk>
-                    <Meat></Meat>
+                    <Meat
+                    gender={this.state.result.gender}
+                    ></Meat>
                 </Milk>
             </Eggs>
             </div>

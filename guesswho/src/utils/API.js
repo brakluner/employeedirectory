@@ -6,6 +6,6 @@ const BASEURL = "https://randomuser.me/api/";
 export default {
     getPeople: function() {
         return axios.get(BASEURL)
-    }
-}
+        }
+    };
 
