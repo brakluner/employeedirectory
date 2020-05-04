@@ -5,7 +5,8 @@ import Meat from "./Meat";
 import Milk from "./Milk";
 import Toast from "./Toast";
 import Bacon from "./Bacon";
-import API from "../utils/API"
+import Pepper from "./Pepper";
+import API from "../utils/API";
 
 console.log(API.getPeople())
 
@@ -36,10 +37,13 @@ class Omelet extends Component {
     render() {
         return (
                 <Milk>
+                    <div className="img">
                     <img src={this.state.result.large}></img>
+                    </div>
                     <div className="meatTable">
                     <Toast />
                     <Meat />
+                    <Pepper />
                     <Bacon />
                     <Eggs />
                     </div>

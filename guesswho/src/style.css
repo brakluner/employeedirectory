@@ -8,6 +8,16 @@ body {
     background: #696b46;
     border-style: ridge;
     border-color: #e3c515;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+img {
     width: 33%;
     margin: auto;
+}
+.img{
+    text-align: center;
+    margin-top: 50px;
 }
