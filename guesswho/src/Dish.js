@@ -9,6 +9,15 @@ class Dish extends Component {
             <Omelet />
             <Omelet />
             <Omelet />
+            <Omelet />
+            <Omelet />
+            <Omelet />
+            <Omelet />
+            <Omelet />
+            <Omelet />
+            <Omelet />
+            <Omelet />
+            <Omelet />
         </Plate>
             
         );
