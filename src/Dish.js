@@ -7,17 +7,6 @@ class Dish extends Component {
     render() {
         return ( <Plate>
             <Omelet />
-            <Omelet />
-            <Omelet />
-            <Omelet />
-            <Omelet />
-            <Omelet />
-            <Omelet />
-            <Omelet />
-            <Omelet />
-            <Omelet />
-            <Omelet />
-            <Omelet />
         </Plate>
             
         );
