@@ -1,7 +1,7 @@
 import React from "react";
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { render } from "react-dom";
-import Dish from "./Dish";
+import Omelet from "./components/Omelet";
 
 const style = {
   height: 30,
@@ -37,9 +37,9 @@ class App extends React.Component {
           loader={<h4>Loading...</h4>}
         >
           {this.state.items.map((i, index) => (
-            <Dish style={style} key={index}>
+            <Omelet style={style} key={index}>
               {index}
-            </Dish>
+            </Omelet>
           ))}
         </InfiniteScroll>
       </div>
