@@ -1,6 +1,5 @@
 import React from "react";
 import InfiniteScroll from 'react-infinite-scroll-component';
-import { render } from "react-dom";
 import Omelet from "./components/Omelet";
 
 const style = {
